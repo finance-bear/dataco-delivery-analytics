@@ -60,7 +60,7 @@ Kết quả cho thấy tình trạng giao hàng trễ không tập trung vào m�
 Dashboard thứ hai tập trung phân tích hiệu quả giao hàng của từng phương thức vận chuyển (Shipping Mode) và cơ cấu phân bổ các phương thức này theo độ phức tạp đơn hàng, nhóm sản phẩm và điểm đến của đơn hàng.
 
 
-<p align="center"><img src="resources/assets/root%20cause.png" width="900" alt="Dashboard phân tích phương thức vận chuyển"></p>
+<p align="center"><img src="resources/assets/root.png" width="900" alt="Dashboard phân tích phương thức vận chuyển"></p>
 <p align="center">
   <strong><em>Dashboard 2. Phân tích vai trò của phương thức vận chuyển</em></strong>
 </p>
