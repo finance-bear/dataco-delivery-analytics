@@ -7,11 +7,17 @@ Dự án phân tích hiệu quả giao hàng dựa trên dữ liệu DataCo Glob
 [![Tableau Public](https://img.shields.io/badge/Tableau_Public-Xem_dashboard-1F77B4?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/tran.trinh8856/viz/dataco_17951038352750/overview?publish=yes)
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Xem_dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis)
 
-<!-- VIDEO DEMO: Tại đây, trong trình chỉnh sửa README trên GitHub, kéo thả video demo vào để GitHub tạo đường dẫn đính kèm. Giữ lại đường dẫn Markdown mà GitHub tự chèn rồi xóa dòng chú thích này. -->
+
+## demo
+
+
+https://github.com/user-attachments/assets/9f75c1da-67e2-4f00-8f48-fa81c1274df1
+
+
 
 <br>
 
-## 1. Mục tiêu
+## 1. Mục tiêu dự án
 
 Dự án sử dụng bộ dữ liệu đánh giá hiệu quả giao hàng, tìm hiểu các yếu tố liên quan đến tỷ lệ giao trễ và đề xuất phương án cải thiện.
 
