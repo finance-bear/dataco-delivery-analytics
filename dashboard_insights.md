@@ -16,6 +16,8 @@ Dựa trên dữ liệu DataCo Global đã được chuẩn hoá, hệ thống d
 
 Mục tiêu cuối cùng là hỗ trợ bộ phận vận hành xác định vấn đề và cân nhắc các phương án cải thiện hiệu quả giao hàng.
 
+<br>
+
 ## 2. Thiết kế dashboard
 
 ### 2.1. KPI
@@ -31,33 +33,39 @@ KPIs được tính ở cấp độ đơn hàng (`order_id`) nhằm tránh trùn
 | Avg. Scheduled Shipping Days | Thời gian vận chuyển dự kiến trung bình |
 | Avg. Actual Shipping Days | Thời gian vận chuyển thực tế trung bình |
 
+<br>
+
 ### 2.2. Dashboards & Insights
 
-#### 2.2.1. Overview – Tổng quan hiệu quả giao hàng
+### 2.2.1. Overview – Tổng quan hiệu quả giao hàng
 
 Dashboard đầu tiên đánh giá thực trạng giao hàng thông qua các chỉ số tổng quan và ba góc độ phân tích: thời gian, nhóm sản phẩm và địa điểm giao hàng.
 
-<!-- CHÈN ẢNH OVERVIEW TẠI ĐÂY; thay overview.png bằng tên ảnh thật trong resources/assets.
-<p align="center"><img src="resources/assets/overview.png" width="900" alt="Dashboard tổng quan hiệu quả giao hàng"></p>
-<p align="center"><em>Hình 1. Tổng quan hiệu quả giao hàng</em></p>
--->
 
-**Kết quả phân tích**
+<p align="center"><img src="resources/assets/overview.png" width="900" alt="Dashboard tổng quan hiệu quả giao hàng"></p>
+<p align="center">
+  <strong><em>Dashboard 1. Tổng quan hiệu quả giao hàng</em></strong>
+</p>
+
+<br>
 
 Trong tổng số **65.749 đơn hàng**, có **36.047 đơn giao trễ**, tương đương **54,8%**. Tỷ lệ này duy trì tương đối ổn định qua các quý, nhóm sản phẩm và địa điểm giao hàng, dù số lượng đơn hàng giữa các nhóm có sự khác biệt.
 
 Kết quả cho thấy tình trạng giao hàng trễ không tập trung vào một thời điểm, nhóm sản phẩm hay khu vực cụ thể. Điều này gợi ý rằng tỷ lệ giao trễ cao có thể liên quan đến những yếu tố vận hành chung, thay vì chỉ xuất phát từ đặc điểm riêng của từng nhóm đơn hàng.
 
-#### 2.2.2. Root Cause – Phân tích vai trò của phương thức vận chuyển
+<br>
+
+### 2.2.2. Root Cause – Phân tích vai trò của phương thức vận chuyển
 
 Dashboard thứ hai tập trung phân tích hiệu quả giao hàng của từng phương thức vận chuyển (Shipping Mode) và cơ cấu phân bổ các phương thức này theo độ phức tạp đơn hàng, nhóm sản phẩm và điểm đến của đơn hàng.
 
-<!-- CHÈN ẢNH ROOT CAUSE TẠI ĐÂY; thay root_cause.png bằng tên ảnh thật.
-<p align="center"><img src="resources/assets/root_cause.png" width="900" alt="Dashboard phân tích phương thức vận chuyển"></p>
-<p align="center"><em>Hình 2. Phân tích vai trò của phương thức vận chuyển</em></p>
--->
 
-**Kết quả phân tích**
+<p align="center"><img src="resources/assets/root%20cause.png" width="900" alt="Dashboard phân tích phương thức vận chuyển"></p>
+<p align="center">
+  <strong><em>Dashboard 2. Phân tích vai trò của phương thức vận chuyển</em></strong>
+</p>
+
+<br>
 
 Tỷ lệ giao trễ có sự khác biệt lớn giữa các phương thức vận chuyển. **First Class** và **Second Class** có tỷ lệ giao trễ lần lượt là **95,3%** và **76,7%**, trong khi **Same Day** và **Standard Class** thấp hơn, ở mức **46,1%** và **38,1%**.
 
@@ -67,14 +75,19 @@ Bên cạnh đó, cơ cấu phân bổ Shipping Mode tương đối đồng đ�
 
 Kết quả này giúp giải thích vì sao tỷ lệ giao trễ chung duy trì ở mức cao và ít biến động giữa các nhóm dữ liệu, đồng thời cho thấy việc điều chỉnh cơ cấu phân bổ phương thức vận chuyển là một hướng cải thiện đáng xem xét.
 
-#### 2.2.3. Simulation – Mô phỏng kết quả của các phương án cải thiện
+<br>
+
+### 2.2.3. Simulation – Mô phỏng kết quả của các phương án cải thiện
 
 Dashboard cuối cùng được xây dựng để đánh giá các kịch bản điều chỉnh phân bổ phương thức vận chuyển dựa trên dữ liệu lịch sử.
 
-<!-- CHÈN ẢNH SIMULATION TẠI ĐÂY; thay simulation.png bằng tên ảnh thật.
-<p align="center"><img src="resources/assets/simulation.png" width="900" alt="Dashboard mô phỏng phương án cải thiện"></p>
-<p align="center"><em>Hình 3. Mô phỏng các phương án cải thiện</em></p>
--->
+
+<p align="center"><img src="resources/assets/simulator.png" width="900" alt="Dashboard mô phỏng phương án cải thiện"></p>
+<p align="center">
+  <strong><em>Dashboard 3. Mô phỏng các phương án cải thiện</em></strong>
+</p>
+
+<br>
 
 Người dùng có thể thay đổi **03 yếu tố**:
 
@@ -82,30 +95,21 @@ Người dùng có thể thay đổi **03 yếu tố**:
 - **Phạm vi áp dụng:** Ưu tiên các nhóm sản phẩm hoặc địa điểm, đồng thời điều chỉnh số nhóm được lựa chọn.
 - **Cơ cấu vận chuyển:** Thay đổi tỷ trọng phân bổ giữa bốn phương thức vận chuyển.
 
-Kết quả mô phỏng mang tính tham khảo, dựa trên giả định hiệu quả giao hàng lịch sử của từng phương thức không thay đổi khi điều chỉnh phân bổ.
+Kết quả mô phỏng mang tính tham khảo, dựa trên giả định hiệu quả giao hàng lịch sử của từng phương thức không thay đổi khi điều chỉnh phân bổ.  
 
-**Ý nghĩa ứng dụng**
+Qua các kịch bản thử nghiệm, việc ưu tiên điều chỉnh theo nhóm sản phẩm và giảm tỷ trọng First Class, Second Class để chuyển sang Same Day, Standard Class có tiềm năng giảm tỷ lệ giao trễ tốt nhất.
 
-Công cụ cho phép bộ phận vận hành thử nghiệm nhiều phương án trước khi triển khai, đồng thời đánh giá:
-
-- Phạm vi nào nên được ưu tiên điều chỉnh.
-- Cơ cấu vận chuyển nào có khả năng giảm tỷ lệ giao trễ.
-- Mức cải thiện dự kiến khi áp dụng phương án cho các nhóm đơn hàng khác nhau.
-
-Các kịch bản có thể được so sánh để lựa chọn phương án phù hợp với mục tiêu vận hành và nguồn lực thực tế.
-
-**Kết quả phân tích**
-
-Qua các kịch bản thử nghiệm, việc ưu tiên điều chỉnh theo nhóm sản phẩm và giảm tỷ trọng First Class, Second Class để chuyển sang Same Day, Standard Class cho thấy tiềm năng giảm tỷ lệ giao trễ.
+<br>
 
 ## 3. Đề xuất cải thiện
 
-Từ kết quả phân tích, việc điều chỉnh cơ cấu phân bổ phương thức vận chuyển là một hướng cải thiện đáng xem xét, thay vì chỉ tập trung vào từng nhóm sản phẩm hoặc khu vực giao hàng.
+Từ kết quả phân tích, việc điều chỉnh cơ cấu phân bổ phương thức vận chuyển là một hướng cải thiện đáng xem xét, thay vì chỉ tập trung vào từng nhóm sản phẩm hoặc khu vực giao hàng. 02 hướng đề xuất chính:  
 
-**02 hướng đề xuất chính:**
+**[1] Điều chỉnh cơ cấu phương thức vận chuyển**: Cân nhắc giảm tỷ trọng First Class và Second Class, đồng thời chuyển một phần đơn hàng sang Same Day và Standard Class, là hai phương thức có tỷ lệ giao trễ thấp hơn trong dữ liệu lịch sử.  
 
-1. **Điều chỉnh cơ cấu phương thức vận chuyển:** Cân nhắc giảm tỷ trọng First Class và Second Class, đồng thời chuyển một phần đơn hàng sang Same Day và Standard Class, là hai phương thức có tỷ lệ giao trễ thấp hơn trong dữ liệu lịch sử.
-2. **Ưu tiên triển khai theo nhóm đơn hàng:** Thay vì điều chỉnh đồng loạt, có thể sử dụng dashboard mô phỏng để xác định các nhóm sản phẩm hoặc địa điểm có tiềm năng cải thiện lớn, từ đó lựa chọn phạm vi triển khai phù hợp.
+**[2] Ưu tiên triển khai theo nhóm đơn hàng**: Thay vì điều chỉnh đồng loạt, có thể sử dụng dashboard mô phỏng để xác định các nhóm sản phẩm hoặc địa điểm có tiềm năng cải thiện lớn, từ đó lựa chọn phạm vi triển khai phù hợp.
+
+ <br>
 
 ## 4. Hạn chế phân tích
 
